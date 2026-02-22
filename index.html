@@ -7,32 +7,49 @@
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fff5eb;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff8f0;
 }
 
-header {
-    background: linear-gradient(to right, #ff7a18, #ffb347);
-    color: white;
+.hero {
+    background: url('tiffin.jpg') center/cover no-repeat;
+    padding: 80px 20px;
     text-align: center;
-    padding: 40px 20px;
+    color: white;
+    position: relative;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 36px;
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
 }
 
-header p {
-    font-size: 18px;
-    margin-top: 10px;
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.logo {
+    width: 120px;
 }
 
 .button {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background-color: #d84315;
+    background: #ff6f00;
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -40,7 +57,7 @@ header p {
 }
 
 .section {
-    padding: 40px 20px;
+    padding: 50px 20px;
     text-align: center;
 }
 
@@ -57,8 +74,20 @@ header p {
     color: #d84315;
 }
 
+.gallery img {
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
 .footer {
-    background: #ff7a18;
+    background: #ff6f00;
     color: white;
     text-align: center;
     padding: 20px;
@@ -68,66 +97,67 @@ header p {
 
 <body>
 
-<header>
-    <h1>Mummy Ka Yummy Tiffin</h1>
-    <p>Ghar Jaisa Swad, Roz Fresh Khana – Vadodara</p>
-    <a class="button" href="https://wa.me/917383344746" target="_blank">Order on WhatsApp</a>
-</header>
+<div class="hero">
+    <div class="hero-content">
+        <img src="logo.png" class="logo">
+        <h1>Mummy Ka Yummy Tiffin</h1>
+        <p>Tiffin With A Heart ❤️ | Vadodara</p>
+        <a class="button" href="https://wa.me/917383344746" target="_blank">Order Now on WhatsApp</a>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Today's Live Menu</h2>
+    <p>
+    Dal Fry<br>
+    Aloo Gobi Sabzi<br>
+    6 Roti (Ghee)<br>
+    Rice<br>
+    Salad
+    </p>
+</div>
 
 <div class="section">
     <h2>Our Tiffin Plans</h2>
 
     <div class="plan-box">
         <h2>Lunch Box – ₹80/day</h2>
-        <p>
-        ✔ 6 Roti (Ghee)<br>
-        ✔ 2 Seasonal Sabzi<br>
-        ✔ Or 4 Roti – 1 Sabji<br>
-        ✔ Dal – Chawal
-        </p>
+        6 Roti | 2 Sabzi | Dal | Rice
     </div>
 
     <div class="plan-box">
         <h2>Dinner Platter – ₹110/day</h2>
-        <p>
-        ✔ 6 Roti<br>
-        ✔ 2 Sabzi<br>
-        ✔ Dal<br>
-        ✔ Rice<br>
-        ✔ Salad / Pickle
-        </p>
+        6 Roti | 2 Sabzi | Dal | Rice | Salad
     </div>
 
     <div class="plan-box">
         <h2>Family Pack – ₹270/day</h2>
-        <p>
-        ✔ 12 Roti<br>
-        ✔ 1 Kathod<br>
-        ✔ Dal<br>
-        ✔ Rice<br>
-        ✔ Salad / Pickle<br>
-        ✔ 1 Veg Sabji
-        </p>
+        12 Roti | Dal | Rice | Kathod | Veg Sabji
     </div>
 </div>
 
-<div class="section">
-    <h2>Free Delivery Available</h2>
-    <p>
-    Within 5 KM from:<br>
-    104, Janki Avenue,<br>
-    Near Balaji Restaurant,<br>
-    Vasna Gotri Road, Vadodara
-    </p>
+<div class="section gallery">
+    <h2>Our Food Gallery</h2>
+    <img src="lunch.jpg">
+    <img src="dinner.jpg">
+</div>
+
+<div class="section map">
+    <h2>Find Us on Google Maps</h2>
+    <iframe 
+    src="https://www.google.com/maps?q=22.3049626,73.1456876&output=embed">
+    </iframe>
+    <br><br>
+    <a class="button" href="https://www.google.com/maps/place/Mummy+Ka+Yummy+Tiffin/@22.3049626,73.1431127,17z" target="_blank">
+    See Google Reviews
+    </a>
 </div>
 
 <div class="footer">
+    <p>📍 104, Janki Avenue, Vasna Gotri Road, Vadodara</p>
     <p>📞 WhatsApp: 7383344746</p>
-    <p>© 2026 Mummy Ka Yummy Tiffin | Made with ❤️ in Vadodara</p>
+    <p>© 2026 Mummy Ka Yummy Tiffin</p>
 </div>
 
 </body>
 </html>
-
-
-
