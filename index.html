@@ -3,94 +3,107 @@
 <head>
 <title>Mummy Ka Yummy Tiffin | Vadodara</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Homemade Tiffin Service in Vadodara. Ghar Jaisa Swad, Mummy Ka Pyaar. Weekly, 15 Days & Monthly Plans Available.">
 
 <style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #fff8f0;
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:#fff7f0;
+scroll-behavior:smooth;
 }
 
-.hero {
-    background: url('tiffin.jpg') center/cover no-repeat;
-    padding: 80px 20px;
-    text-align: center;
-    color: white;
-    position: relative;
+/* HERO */
+.hero{
+background:url('hero.jpg') center/cover no-repeat;
+color:white;
+text-align:center;
+padding:100px 20px;
+position:relative;
 }
-
-.hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.5);
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.6);
 }
-
-.hero-content {
-    position: relative;
-    z-index: 2;
+.hero-content{
+position:relative;
+z-index:2;
 }
-
-.hero h1 {
-    font-size: 42px;
-    margin: 10px 0;
-    letter-spacing: 2px;
+.hero h1{
+font-size:42px;
+margin:10px 0;
+letter-spacing:2px;
 }
-
-.hero p {
-    font-size: 20px;
+.tagline{
+font-size:20px;
+margin-bottom:20px;
 }
-
-.logo {
-    width: 120px;
+.button{
+background:#ff6f00;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+display:inline-block;
+margin:10px;
 }
-
-.button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #ff6f00;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
+.section{
+padding:60px 20px;
+text-align:center;
 }
-
-.section {
-    padding: 50px 20px;
-    text-align: center;
+.card{
+background:#fff0e0;
+margin:20px auto;
+padding:20px;
+max-width:600px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,0.1);
 }
-
-.plan-box {
-    background: #fff0e0;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 500px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+.gallery img{
+width:280px;
+border-radius:12px;
+margin:10px;
+transition:0.3s;
 }
-
-.plan-box h2 {
-    color: #d84315;
+.gallery img:hover{
+transform:scale(1.05);
 }
-
-.gallery img {
-    width: 250px;
-    margin: 10px;
-    border-radius: 10px;
+.discount{
+background:#ffe0cc;
+padding:30px;
+font-size:18px;
+font-weight:bold;
 }
-
-.map iframe {
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
+.footer{
+background:#ff6f00;
+color:white;
+padding:30px;
+text-align:center;
 }
-
-.footer {
-    background: #ff6f00;
-    color: white;
-    text-align: center;
-    padding: 20px;
+input, textarea{
+width:90%;
+padding:10px;
+margin:10px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+.popup{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#ff6f00;
+color:white;
+padding:15px 20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+animation:fadein 1s;
+}
+@keyframes fadein{
+from{opacity:0;}
+to{opacity:1;}
 }
 </style>
 </head>
@@ -98,65 +111,83 @@ body {
 <body>
 
 <div class="hero">
-    <div class="hero-content">
-        <img src="logo.png" class="logo">
-        <h1>Mummy Ka Yummy Tiffin</h1>
-        <p>Tiffin With A Heart ❤️ | Vadodara</p>
-        <a class="button" href="https://wa.me/917383344746" target="_blank">Order Now on WhatsApp</a>
-    </div>
+<div class="hero-content">
+<img src="logo.png" width="120">
+<h1>Mummy Ka Yummy Tiffin</h1>
+<p class="tagline">Ghar Jaisa Swad, Mummy Ka Pyaar ❤️</p>
+<a class="button" href="#plans">View Plans</a>
+<a class="button" href="https://wa.me/917383344746" target="_blank">Order on WhatsApp</a>
+<a class="button" href="https://instagram.com/YOUR_INSTAGRAM_USERNAME" target="_blank">Instagram</a>
+</div>
 </div>
 
 <div class="section">
-    <h2>Today's Live Menu</h2>
-    <p>
-    Dal Fry<br>
-    Aloo Gobi Sabzi<br>
-    6 Roti (Ghee)<br>
-    Rice<br>
-    Salad
-    </p>
+<h2>Why Choose Us?</h2>
+<p>✔ Homemade Food<br>
+✔ Tasty & Hygienic Packing<br>
+✔ On-Time Delivery<br>
+✔ Warm & Homely Feel</p>
 </div>
 
-<div class="section">
-    <h2>Our Tiffin Plans</h2>
+<div class="section" id="plans">
+<h2>Lunch Box – ₹100</h2>
 
-    <div class="plan-box">
-        <h2>Lunch Box – ₹80/day</h2>
-        6 Roti | 2 Sabzi | Dal | Rice
-    </div>
+<div class="card">
+<h3>Option 1</h3>
+5 Roti + 1 Kathod + 1 Veg Sabji + Salad<br>
+(Chaas Extra ₹15)
+</div>
 
-    <div class="plan-box">
-        <h2>Dinner Platter – ₹110/day</h2>
-        6 Roti | 2 Sabzi | Dal | Rice | Salad
-    </div>
+<div class="card">
+<h3>Option 2</h3>
+4 Roti + 1 Sabji + Dal Rice + Salad<br>
+(Chaas Extra ₹15)
+</div>
 
-    <div class="plan-box">
-        <h2>Family Pack – ₹270/day</h2>
-        12 Roti | Dal | Rice | Kathod | Veg Sabji
-    </div>
+<h2>Dinner Platter – ₹150</h2>
+
+<div class="card">
+6 Roti + 1 Kathod + 1 Sabji + Dal-Rice + Salad + Masala Chaas
+</div>
+</div>
+
+<div class="section discount">
+🔥 Discounts Available 🔥<br><br>
+Weekly Plan – 5% OFF<br>
+15 Days Plan – 10% OFF<br>
+Monthly Plan – 15% OFF
 </div>
 
 <div class="section gallery">
-    <h2>Our Food Gallery</h2>
-    <img src="lunch.jpg">
-    <img src="dinner.jpg">
+<h2>Our Food Gallery</h2>
+<img src="lunch.jpg">
+<img src="dinner.jpg">
 </div>
 
-<div class="section map">
-    <h2>Find Us on Google Maps</h2>
-    <iframe 
-    src="https://www.google.com/maps?q=22.3049626,73.1456876&output=embed">
-    </iframe>
-    <br><br>
-    <a class="button" href="https://www.google.com/maps/place/Mummy+Ka+Yummy+Tiffin/@22.3049626,73.1431127,17z" target="_blank">
-    See Google Reviews
-    </a>
+<div class="section">
+<h2>Delivery Areas</h2>
+Gotri | Vasna | Harinagar | Diwalipura | New Alkapuri | Alkapuri | Ellorapark
+</div>
+
+<div class="section">
+<h2>Place Your Order</h2>
+<form action="https://formspree.io/f/yourformid" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="tel" name="phone" placeholder="Mobile Number" required>
+<textarea name="address" placeholder="Full Delivery Address" required></textarea>
+<button class="button" type="submit">Submit & Order</button>
+</form>
 </div>
 
 <div class="footer">
-    <p>📍 104, Janki Avenue, Vasna Gotri Road, Vadodara</p>
-    <p>📞 WhatsApp: 7383344746</p>
-    <p>© 2026 Mummy Ka Yummy Tiffin</p>
+📍 Vadodara<br>
+📞 7383344746<br>
+📧 mummykayummytiffin@gmail.com<br><br>
+© 2026 Mummy Ka Yummy Tiffin
+</div>
+
+<div class="popup">
+🎉 Save 15% on Monthly Plan!
 </div>
 
 </body>
